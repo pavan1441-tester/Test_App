@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="OUTPUT_PATH" value="/home/harish/Desktop/Selenim_projects/testing-framework/FIG_App/test-output/"/>
+  <parameter name="iWaitForElement" value="20"/>
+  <parameter name="CHROME_DRIVER_PATH" value="/usr/bin/chromedriver"/>
+  <parameter name="sBaseURL" value="https://majesticfacility.staging.utilizecore.com/"/>
+  <parameter name="bRunInTestMode" value="true"/>
+  <parameter name="SAFARI_DRIVER_PATH" value="/usr/bin/safaridriver"/>
+  <parameter name="bPrintScreen" value="true"/>
+  <parameter name="IE_DRIVER_PATH" value="/usr/bin/chromedriver/IEDriverServer.exe"/>
+  <parameter name="iWaitForThread2" value="6000"/>
+  <parameter name="IMAGES_PATH" value="/home/harish/Desktop/Selenim_projects/testing-framework/FIG_App/Images/"/>
+  <parameter name="iWaitForThread" value="2000"/>
+  <parameter name="iWaitForThread1" value="4000"/>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="TESTCASES" value="1"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="DATA_PATH" value="data/data.xls"/>
+    <parameter name="SHEET" value="Sheet1"/>
+    <classes>
+      <class name="ucAppTests.UCAppTest">
+        <methods>
+          <include name="ulipKotakTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ucAppTests.UCAppTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

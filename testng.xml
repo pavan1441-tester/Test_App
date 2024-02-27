@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+	<parameter name="bRunInTestMode" value="true"></parameter>
+	<parameter name="bPrintScreen" value="true"></parameter>
+	<parameter name="CHROME_DRIVER_PATH" value="/usr/bin/chromedriver"></parameter>
+	<parameter name="IE_DRIVER_PATH" value="/usr/bin/chromedriver/IEDriverServer.exe"></parameter>
+	<parameter name="SAFARI_DRIVER_PATH" value="/usr/bin/safaridriver"></parameter>
+	<parameter name="OUTPUT_PATH" value="/home/harish/Desktop/Selenim_projects/testing-framework/uc_App/test-output/"></parameter>	                                 
+	<parameter name="IMAGES_PATH" value="/home/harish/Desktop/Selenim_projects/testing-framework/uc_App/Images/"></parameter>                              
+                            
+	<parameter name="iWaitForElement" value="20"></parameter>
+	<parameter name="iWaitForThread" value="2000"></parameter>
+	<parameter name="iWaitForThread1" value="4000"></parameter>
+	<parameter name="iWaitForThread2" value="6000"></parameter>
+	<parameter name="sBaseURL" value="https://majesticfacility.staging.utilizecore.com/"></parameter>
+	                                  
+
+	<test name="Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="DATA_PATH" value="data/data.xls"></parameter>
+		<parameter name="SHEET" value="Sheet1"></parameter>
+		<parameter name="TESTCASES" value="1"></parameter>
+		<classes>
+			<class name="ucAppTests.UCAppTest" />
+			<class name="lib.CommonClass"></class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+<!-- TO DO LIST
+ 1. Validations with DB call
+ 2. Download of PDF with IE
+ -->
